@@ -1,0 +1,54 @@
+// VARIABLES
+
+// Colors
+
+$color-strong-cyan: hsl(172, 67%, 45%);
+$color-strong-cyan-2: hsl(172, 67%, 75%);
+$color-dark-cyan-1: hsla(172, 67%, 45%, 0.1);
+$color-dark-cyan: hsl(183, 100%, 15%);
+$color-dark-grayish-cyan: hsl(186, 14%, 43%);
+$color-dark-grayish-cyan-2: hsl(184, 14%, 56%);
+$color-light-grayish-cyan: hsl(185, 41%, 84%);
+$color-light-grayish-cyan-2: hsl(189, 41%, 97%);
+$color-light-grayish-cyan-3: hsl(185, 41%, 64%);
+$color-white: hsl(0, 0%, 100%);
+
+$font-size-form-inputs: 2.4rem;
+
+$mobile-width: 23.4375em;
+$desktop-width: 90em;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+::placeholder {
+  color: $color-light-grayish-cyan-3;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.25%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: $color-light-grayish-cyan;
+  height: 100vh;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

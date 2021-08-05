@@ -1,0 +1,431 @@
+.main-logo {
+  display: block;
+  margin: 0 auto;
+  padding: 10rem 0;
+  @media only screen and (max-width: 660px) {
+    padding: 4rem 0;
+  }
+}
+
+.calc-container {
+  background-color: $color-white;
+  width: 100rem;
+  height: 48rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: 1030px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 660px) {
+    height: 80rem;
+  }
+  // @media only screen and (max-width: $mobile-width) {
+  //   height: 80rem;
+  // }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93%;
+  height: 100%;
+  margin: 0 auto;
+  @media only screen and (max-width: 660px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.left-side {
+  flex: 0 0 50%;
+  height: 82%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s;
+  @media only screen and (max-width: 870px) {
+    flex: 0 0 39%;
+  }
+  @media only screen and (max-width: 660px) {
+    height: 50%;
+    width: 90%;
+    margin: 4rem auto;
+  }
+  &__bill {
+    font-size: 1.3rem;
+    color: $color-dark-grayish-cyan;
+    font-weight: 600;
+    &-input {
+      text-align: right;
+      padding: 0.6rem 1.6rem;
+      color: $color-dark-cyan;
+      font-weight: 700;
+      width: 90%;
+      font-family: "Space Mono", monospace;
+      font-size: 2.4rem;
+      display: block;
+      border: transparent;
+      background-color: $color-light-grayish-cyan-2;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.4s;
+      @media only screen and (max-width: 870px) {
+        width: 85%;
+      }
+      @media only screen and (max-width: 660px) {
+        width: 100%;
+      }
+      &:focus {
+        border: 2px solid $color-strong-cyan;
+        outline: $color-strong-cyan;
+        padding: 0.4rem 1.6rem;
+      }
+    }
+  }
+  &__people {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $color-dark-grayish-cyan;
+    margin-top: 5rem;
+    display: inline-block;
+    @media only screen and (max-width: 430px) {
+      margin-top: 1rem;
+    }
+    @media only screen and (max-width: $mobile-width) {
+      margin-top: 1rem;
+    }
+    &-zero {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: rgb(255, 72, 0);
+      display: none;
+    }
+    &-input {
+      text-align: right;
+      padding: 0.6rem 1.6rem;
+      color: $color-dark-cyan;
+      font-weight: 700;
+      width: 90%;
+      font-family: "Space Mono", monospace;
+      font-size: 2.4rem;
+      display: block;
+      border: transparent;
+      background-color: $color-light-grayish-cyan-2;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.4s;
+      @media only screen and (max-width: 870px) {
+        width: 85%;
+      }
+      @media only screen and (max-width: 660px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__tip {
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    &-custom {
+      width: 30.5%;
+      margin-left: 1.5rem;
+      height: 5rem;
+      outline: none;
+      border: none;
+      background-color: $color-light-grayish-cyan-2;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-family: "Space Mono", monospace;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.4s;
+      &::placeholder {
+        color: $color-dark-grayish-cyan;
+      }
+      &:focus {
+        text-align: right;
+        padding: 1.8rem;
+        color: $color-dark-cyan;
+        border: 2px solid $color-strong-cyan;
+        outline: $color-strong-cyan;
+        &::placeholder {
+          color: transparent;
+        }
+        @media only screen and (max-width: 1000px) {
+          font-size: 2rem;
+          padding: 2rem;
+        }
+        @media only screen and (max-width: 920px) {
+          font-size: 1.8rem;
+          padding: 2rem;
+        }
+        @media only screen and (max-width: 870px) {
+          font-size: 1.4rem;
+          padding: 0.4rem;
+        }
+        @media only screen and (max-width: 800px) {
+          font-size: 1.2rem;
+          padding: 0.6rem;
+        }
+        @media only screen and (max-width: 660px) {
+          font-size: 2rem;
+          padding: 2.3rem;
+        }
+        @media only screen and (max-width: 430px) {
+          font-size: 2.6rem;
+          padding: 2.3rem;
+        }
+        @media only screen and (max-width: $mobile-width) {
+          font-size: 2.6rem;
+          padding: 2.3rem;
+        }
+      }
+      @media only screen and (max-width: 870px) {
+        width: 25%;
+        font-size: 1.7rem;
+      }
+      @media only screen and (max-width: 750px) {
+        font-size: 1.4rem;
+      }
+      @media only screen and (max-width: 750px) {
+        font-size: 1.2rem;
+      }
+      @media only screen and (max-width: 660px) {
+        width: 30.5%;
+        font-size: 2rem;
+      }
+      @media only screen and (max-width: 430px) {
+        font-size: 2.4rem;
+        width: 46.5%;
+      }
+      @media only screen and (max-width: $mobile-width) {
+        font-size: 2.4rem;
+        width: 46.5%;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 660px) {
+      width: 100%;
+    }
+  }
+}
+
+.btn {
+  outline: none;
+  border: none;
+  font-family: "Space Mono", monospace;
+  font-size: 2.3rem;
+  border-radius: 5px;
+  color: $color-white;
+  background-color: $color-dark-cyan;
+  width: 30.5%;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.4s;
+  cursor: pointer;
+  &:not(:first-child) {
+    margin-left: 1.5rem;
+  }
+  &:nth-of-type(4) {
+    margin-left: 0;
+  }
+  &:hover {
+    background-color: $color-strong-cyan-2;
+    color: $color-dark-cyan;
+  }
+  &:focus {
+    background-color: $color-strong-cyan;
+    color: $color-dark-cyan;
+  }
+  &-reset {
+    margin-top: auto;
+    height: 5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: $color-dark-cyan-1;
+    color: $color-dark-cyan;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-strong-cyan-2;
+      color: $color-dark-cyan;
+    }
+  }
+  @media only screen and (max-width: 870px) {
+    width: 26.5%;
+  }
+  @media only screen and (max-width: 660px) {
+    width: 30.5%;
+  }
+  @media only screen and (max-width: 432px) {
+    width: 46.5%;
+    &:nth-of-type(3) {
+      margin-left: 0;
+    }
+    &:nth-of-type(4) {
+      margin-left: 1.5rem;
+    }
+    &:nth-of-type(5) {
+      margin-left: 0;
+    }
+  }
+  @media only screen and (max-width: $mobile-width) {
+    width: 46.5%;
+    &:nth-of-type(3) {
+      margin-left: 0;
+    }
+    &:nth-of-type(4) {
+      margin-left: 1.5rem;
+    }
+    &:nth-of-type(5) {
+      margin-left: 0;
+    }
+  }
+}
+
+.input-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.dollar-icon {
+  position: absolute;
+  top: 2.1rem;
+  left: 2rem;
+  fill: $color-light-grayish-cyan-2;
+}
+
+.person-icon {
+  position: absolute;
+  top: 2.1rem;
+  left: 2rem;
+  fill: $color-light-grayish-cyan-2;
+}
+
+.right-side {
+  flex: 1;
+  height: 90%;
+  background-color: $color-dark-cyan;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+  @media only screen and (max-width: 660px) {
+    height: 50%;
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+  @media only screen and (max-width: 430px) {
+    height: 45%;
+    margin-top: 2rem;
+  }
+  @media only screen and (max-width: $mobile-width) {
+    height: 45%;
+    margin-top: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    align-self: center;
+    margin: auto 0;
+  }
+
+  &__numbers-container {
+    display: flex;
+  }
+  &__p-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    &:first-child {
+      margin-bottom: 2rem;
+    }
+  }
+  &__dash-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__total-calc {
+    font-size: 5rem;
+    color: $color-strong-cyan;
+    font-weight: 700;
+    @media only screen and (max-width: 430px) {
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: $mobile-width) {
+      font-size: 4rem;
+    }
+  }
+  &__tip-amount-calc {
+    font-size: 5rem;
+    color: $color-strong-cyan;
+    font-weight: 700;
+    @media only screen and (max-width: 430px) {
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: $mobile-width) {
+      font-size: 4rem;
+    }
+  }
+
+  &__naslov {
+    color: $color-light-grayish-cyan;
+    font-size: 1.7rem;
+    font-weight: 600;
+    @media only screen and (max-width: 430px) {
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width: $mobile-width) {
+      font-size: 1.4rem;
+    }
+  }
+  &__person {
+    align-self: flex-start;
+    color: $color-dark-grayish-cyan-2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    @media only screen and (max-width: 430px) {
+      font-size: 1rem;
+    }
+    @media only screen and (max-width: $mobile-width) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+  @media only screen and (max-width: 660px) {
+    width: 100%;
+  }
+}
